@@ -2,6 +2,7 @@
   "name": "workspace",
   "version": "0.0.0",
   "license": "MIT",
+  "packageManager": "pnpm@10.34.5",
   "scripts": {
     "preinstall": "sh -c 'rm -f package-lock.json yarn.lock; case \"$npm_config_user_agent\" in pnpm/*) ;; *) echo \"Use pnpm instead\" >&2; exit 1 ;; esac'",
     "build": "pnpm run typecheck && pnpm -r --if-present run build",
@@ -13,8 +14,6 @@
     "@replit/connectors-sdk": "^0.4.3"
   },
   "devDependencies": {
-    "@rollup/rollup-darwin-arm64": "4.63.1",
-    "@tailwindcss/oxide-darwin-arm64": "4.3.3",
     "prettier": "^3.9.6",
     "typescript": "~5.9.3"
   }
