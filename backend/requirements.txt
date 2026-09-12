@@ -1,0 +1,10 @@
+# Core (required)
+pdfplumber
+python-docx
+scikit-learn
+
+# Optional but recommended: much better semantic matching than the
+# TF-IDF fallback. Needs ~2GB free space for the model download (one-time,
+# then works fully offline). If you skip this, matcher.py automatically
+# falls back to TF-IDF â€” no code changes needed either way.
+sentence-transformers
