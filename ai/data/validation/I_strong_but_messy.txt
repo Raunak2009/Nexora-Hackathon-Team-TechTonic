@@ -1,0 +1,22 @@
+SANJANA   K
+sanjana.k@example.com  |  ph 9876512340
+
+teCHNICAL SKILLZ
+programing langs - Javascrpit , typescript , python
+frontend :- Reactjs , nextjs , html , css , bootstrap
+backend :- nodejs , expressjs , restful apis , jwt
+db :- mongo db , mysql
+misc - git , github , docker , jest , postman
+
+expierence
+Full Stack Dev Intern @ Nimbus Tech ( 03/2025 - 08/2025 )
+ * developed rest api endpoints in nodejs + express , integrated with mongo db
+ * built reactjs dashboard with reusable componants and redux store
+ * setup CI pipeline on github actions , wrote jest unit test
+ * daily standups , agile sprints , code review with seniors
+projct
+ - ChatterBox : realtime chat app , socket.io + nodejs + mongodb , react frontend
+ - devfolio clone -> nextjs , tailwind , deployed on vercel
+edu
+B.Tech CSE , 2026 batch , cgpa 8.1
+dsa - 600+ leetcode problems

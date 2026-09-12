@@ -141,3 +141,13 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Nexora
+_to_delete/
+Claude outputs/
+__pycache__/
+*.pyc
+.pytest_cache/
+ai/reports/
+ai/result.json
+ai/out.json

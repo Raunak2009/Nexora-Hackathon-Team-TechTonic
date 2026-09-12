@@ -1,0 +1,17 @@
+Priya Menon
+priya.menon@example.com
+
+PROFILE
+Manual and automation QA engineer with 2 years of experience.
+
+SKILLS
+Manual Testing, Selenium WebDriver, TestNG, JIRA, Core Java, SQL, Agile
+
+EXPERIENCE
+QA Engineer, Testbridge (2023 - 2025)
+- Wrote and executed test cases for a banking web application.
+- Built Selenium automation suites with TestNG and Maven.
+- Logged and tracked defects in JIRA through the sprint cycle.
+
+EDUCATION
+B.E Electronics 2023.

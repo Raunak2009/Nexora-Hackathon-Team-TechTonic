@@ -1,0 +1,29 @@
+TechNova Solutions
+Job Title: Web Developer Intern
+
+About the Role
+Join our product team building customer-facing web experiences end to end.
+
+Responsibilities
+- Build and maintain features across the front end and the back end.
+- Implement server-side endpoints that the web client consumes.
+- Manage data models for our application database.
+- Work with the team through our sprint cycle and review each other's code.
+
+Requirements
+- Solid understanding of JavaScript and modern front-end development.
+- Experience building user interfaces with React.
+- Hands-on experience with Node.js for server-side development.
+- Must be comfortable designing and consuming REST APIs.
+- Working knowledge of a database - we use MongoDB, but relational counts.
+- Strong grasp of HTML and CSS, including responsive layouts.
+- Proficient with Git for version control.
+
+Preferred Qualifications
+- Familiarity with TypeScript is a plus.
+- Exposure to Next.js or another React meta-framework would be an advantage.
+- Basic understanding of Docker is nice to have.
+- Experience with unit testing frameworks such as Jest is desirable.
+
+Eligibility
+- Pursuing or recently completed a Bachelor's degree in a related field.

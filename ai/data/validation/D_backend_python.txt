@@ -1,0 +1,17 @@
+Rohan Das
+rohan.das@example.com
+
+SKILLS
+Python, Django, Django REST Framework, PostgreSQL, SQL, Git, Docker, Linux, AWS
+
+EXPERIENCE
+Backend Intern, Cloudmint (2024 - 2025)
+- Built REST APIs with Django REST Framework for an inventory platform.
+- Optimised PostgreSQL queries, cut p95 latency from 800ms to 210ms.
+- Containerised services with Docker and deployed to AWS EC2.
+
+PROJECTS
+URL shortener with Django and Redis caching.
+
+EDUCATION
+B.Tech Computer Science 2025. Solid data structures and algorithms foundation.

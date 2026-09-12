@@ -1,0 +1,30 @@
+Aarav Menon
+aarav.menon@example.com | +91 98765 43210 | github.com/aaravm
+
+SUMMARY
+Final year B.Tech Computer Science student building full stack web products.
+Comfortable owning a feature from the database schema through to the browser.
+
+TECHNICAL SKILLS
+Languages: JavaScript, TypeScript, Python, SQL
+Frontend: React, Next.js, HTML5, CSS3, Tailwind CSS, Redux
+Backend: Node.js, Express.js, REST APIs, JWT authentication
+Databases: MongoDB, PostgreSQL, Mongoose
+Tools: Git, GitHub Actions, Postman, Docker, Jest
+
+EXPERIENCE
+Software Engineering Intern, Zerofold Labs (Jun 2025 - Aug 2025)
+- Built REST APIs with Express and MongoDB serving 12k daily requests.
+- Implemented JWT based authentication and role based access control.
+- Wrote unit tests with Jest, raising backend coverage from 31% to 74%.
+- Worked in two week sprints, participated in code reviews on every PR.
+
+PROJECTS
+CampusMart - a marketplace for college students
+- React front end with Redux state management, responsive down to 360px.
+- Node.js and Express backend with a MongoDB data model for listings and chat.
+- Deployed on Vercel with a Dockerised API service.
+
+EDUCATION
+B.Tech Computer Science, 2026. CGPA 8.4.
+Strong grounding in data structures and algorithms; 900+ problems solved.

@@ -1,0 +1,23 @@
+TechNova Solutions
+Job Title: DevOps / Cloud Engineering Intern
+
+Responsibilities
+- Maintain and improve our CI/CD pipelines.
+- Containerise services and manage their deployment.
+- Monitor infrastructure and help with incident response.
+
+Requirements
+- Solid understanding of Linux and shell scripting.
+- Hands-on experience with Docker and containerisation.
+- Must be comfortable with Git and CI/CD tooling such as Jenkins or GitHub Actions.
+- Working knowledge of at least one cloud platform - AWS, Azure or GCP.
+- Understanding of computer networks fundamentals.
+- Scripting ability in Python or Bash.
+
+Preferred Qualifications
+- Familiarity with Kubernetes is a plus.
+- Exposure to infrastructure as code would be an advantage.
+- Awareness of monitoring and observability tooling is desirable.
+
+Eligibility
+- Pursuing a Bachelor's degree in a related field.

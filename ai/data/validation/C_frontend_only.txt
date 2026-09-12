@@ -1,0 +1,20 @@
+Ishita Sharma
+ishita.sharma@example.com
+
+OBJECTIVE
+Front end developer focused on accessible, responsive interfaces.
+
+TECHNICAL SKILLS
+React, JavaScript, HTML5, CSS3, Sass, Tailwind CSS, Figma, Git
+
+EXPERIENCE
+Frontend Intern, Pixelbase Studio (2025)
+- Built reusable React component library used across three products.
+- Converted Figma designs into responsive layouts.
+- Improved Lighthouse accessibility score from 68 to 96.
+
+PROJECTS
+Weather dashboard in React consuming a public REST API.
+
+EDUCATION
+B.Tech Information Technology, 2026.

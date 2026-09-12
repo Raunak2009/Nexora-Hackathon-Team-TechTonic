@@ -1,0 +1,28 @@
+TechNova Solutions
+Job Title: Data Scientist Intern
+
+About the Role
+Work with our analytics team turning raw product data into models and decisions.
+
+Responsibilities
+- Clean, explore and analyse large datasets.
+- Build and evaluate machine learning models for prediction and classification.
+- Communicate findings through clear visualisations and written summaries.
+- Write SQL to pull the data your analysis needs.
+
+Requirements
+- Strong Python skills, including Pandas and NumPy.
+- Solid understanding of machine learning fundamentals and model evaluation.
+- Must be proficient in SQL for data extraction and aggregation.
+- Experience with scikit-learn or an equivalent modelling library.
+- Grounding in statistics and experiment design.
+- Comfortable with data visualization and presenting results.
+
+Preferred Qualifications
+- Familiarity with deep learning frameworks such as TensorFlow or PyTorch is a plus.
+- Exposure to NLP would be an advantage.
+- Experience with Power BI or Tableau is desirable.
+- Awareness of cloud platforms such as AWS is a bonus.
+
+Eligibility
+- Pursuing a Bachelor's or Master's in Computer Science, Statistics or related.

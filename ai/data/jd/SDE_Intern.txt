@@ -1,0 +1,30 @@
+TechNova Solutions
+Job Title: Software Development Engineer Intern
+
+About the Role
+We are hiring an SDE Intern to work on our core backend platform alongside senior
+engineers. You will own features end to end, from data model to deployed endpoint.
+
+Responsibilities
+- Design, build and maintain backend services and APIs.
+- Write queries and manage data models for our application databases.
+- Participate in design reviews and code reviews with the team.
+- Write automated tests for the code you ship and help debug production issues.
+
+Requirements
+- Strong grasp of data structures and algorithms and clear problem solving.
+- Proficient in at least one of Java, Python or C++.
+- Must be comfortable designing and consuming REST APIs.
+- Working knowledge of SQL and relational database design.
+- Solid understanding of object oriented programming.
+- Proficient with Git for version control and collaborative development.
+- Understanding of operating systems and computer networks fundamentals.
+
+Preferred Qualifications
+- Familiarity with Docker and containerised deployment is a plus.
+- Exposure to cloud platforms such as AWS would be an advantage.
+- Experience with unit testing frameworks is desirable.
+- Awareness of system design and microservices is a bonus.
+
+Eligibility
+- Pursuing a Bachelor's degree in Computer Science or a related field.

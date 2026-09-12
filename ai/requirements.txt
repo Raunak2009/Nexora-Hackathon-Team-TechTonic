@@ -1,0 +1,34 @@
+# Core - always needed
+numpy>=1.24
+scikit-learn>=1.3
+rapidfuzz>=3.0
+
+# Semantic encoder (primary). ~2GB install because of torch; the MODEL itself is
+# only ~90MB and is cached locally after the first run. No API key involved.
+# If this install is a problem the engine still works: it falls back to the
+# scikit-learn LSA encoder automatically.
+torch>=2.0
+sentence-transformers>=2.2
+
+# Document parsing
+pymupdf>=1.23          # primary PDF reader, best on multi-column resume layouts
+pdfplumber>=0.10       # PDF fallback
+pypdf>=4.0             # PDF fallback of last resort
+python-docx>=1.1       # .docx
+striprtf>=0.0.26       # .rtf
+# Legacy binary .doc needs a system tool, not a pip package:
+#   macOS:  brew install antiword
+#   Ubuntu: sudo apt install antiword
+# Without it the engine falls back to a crude binary text salvage and warns you.
+
+# Backend
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9
+
+# PDF reports
+reportlab>=4.0
+
+# Tests (optional)
+pytest>=8.0
+httpx>=0.27            # required by fastapi's TestClient

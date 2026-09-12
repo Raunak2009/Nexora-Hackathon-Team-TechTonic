@@ -1,0 +1,385 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: nexhire
+    description: NexHire hiring workspace operations
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+  /nexhire/dashboard:
+    get:
+      operationId: getNexhireDashboard
+      tags: [nexhire]
+      summary: Get dashboard overview
+      responses:
+        "200":
+          description: Dashboard summary, active job, skills, and ranked candidates
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Dashboard"
+  /nexhire/candidates:
+    get:
+      operationId: listNexhireCandidates
+      tags: [nexhire]
+      summary: List candidates for the active job
+      parameters:
+        - name: jobId
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: flagged
+          in: query
+          required: false
+          schema:
+            type: boolean
+        - name: search
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Candidate ranking
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Candidate"
+  /nexhire/candidates/{candidateId}:
+    get:
+      operationId: getNexhireCandidate
+      tags: [nexhire]
+      summary: Get a candidate skill profile
+      parameters:
+        - name: candidateId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Candidate profile
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Candidate"
+        "404":
+          description: Candidate not found
+  /nexhire/jobs:
+    get:
+      operationId: listNexhireJobs
+      tags: [nexhire]
+      summary: List job descriptions
+      responses:
+        "200":
+          description: Job descriptions
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/JobDescription"
+    post:
+      operationId: createNexhireJob
+      tags: [nexhire]
+      summary: Create a job description
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/JobDescriptionInput"
+      responses:
+        "201":
+          description: Created job description
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/JobDescription"
+  /nexhire/jobs/{jobId}:
+    patch:
+      operationId: updateNexhireJob
+      tags: [nexhire]
+      summary: Update a job description
+      parameters:
+        - name: jobId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/JobDescriptionUpdate"
+      responses:
+        "200":
+          description: Updated job description
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/JobDescription"
+    delete:
+      operationId: deleteNexhireJob
+      tags: [nexhire]
+      summary: Delete a job description
+      parameters:
+        - name: jobId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "204":
+          description: Deleted
+  /nexhire/jobs/{jobId}/weights:
+    patch:
+      operationId: updateNexhireWeights
+      tags: [nexhire]
+      summary: Update live scoring weights
+      parameters:
+        - name: jobId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WeightsInput"
+      responses:
+        "200":
+          description: Updated job description
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/JobDescription"
+  /nexhire/jobs/{jobId}/chat:
+    get:
+      operationId: listNexhireChatMessages
+      tags: [nexhire]
+      summary: List recruiter chat history
+      parameters:
+        - name: jobId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Chat history
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/ChatMessage"
+    post:
+      operationId: createNexhireChatMessage
+      tags: [nexhire]
+      summary: Add a recruiter refinement message
+      parameters:
+        - name: jobId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ChatMessageInput"
+      responses:
+        "201":
+          description: Created chat message and assistant response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/ChatMessage"
+  /nexhire/exports:
+    post:
+      operationId: createNexhireExport
+      tags: [nexhire]
+      summary: Generate a recruiter report
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ExportInput"
+      responses:
+        "201":
+          description: Generated export metadata
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ExportResult"
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+    JobDescription:
+      type: object
+      required: [id, title, company, location, status, skills, semanticWeight, keywordWeight, candidateCount]
+      properties:
+        id: { type: string }
+        title: { type: string }
+        company: { type: string }
+        location: { type: string }
+        status: { type: string, enum: [active, draft, archived] }
+        skills:
+          type: array
+          items: { type: string }
+        semanticWeight: { type: number }
+        keywordWeight: { type: number }
+        candidateCount: { type: integer }
+        updatedAt: { type: string }
+    JobDescriptionInput:
+      type: object
+      required: [title, company, location, skills]
+      properties:
+        title: { type: string }
+        company: { type: string }
+        location: { type: string }
+        skills:
+          type: array
+          items: { type: string }
+        semanticWeight: { type: number }
+        keywordWeight: { type: number }
+    JobDescriptionUpdate:
+      type: object
+      properties:
+        title: { type: string }
+        company: { type: string }
+        location: { type: string }
+        status: { type: string, enum: [active, draft, archived] }
+        skills:
+          type: array
+          items: { type: string }
+        semanticWeight: { type: number }
+        keywordWeight: { type: number }
+    WeightsInput:
+      type: object
+      required: [semanticWeight, keywordWeight]
+      properties:
+        semanticWeight: { type: number, minimum: 0, maximum: 1 }
+        keywordWeight: { type: number, minimum: 0, maximum: 1 }
+    SkillMatch:
+      type: object
+      required: [name, matched]
+      properties:
+        name: { type: string }
+        matched: { type: boolean }
+    Candidate:
+      type: object
+      required: [id, name, initials, email, age, yearsExperience, role, semanticScore, keywordScore, overallScore, confidence, status, skills, flagReasons]
+      properties:
+        id: { type: string }
+        name: { type: string }
+        initials: { type: string }
+        email: { type: string }
+        age: { type: integer }
+        yearsExperience: { type: number }
+        role: { type: string }
+        semanticScore: { type: number }
+        keywordScore: { type: number }
+        overallScore: { type: number }
+        confidence: { type: integer }
+        status: { type: string, enum: [shortlisted, review, flagged] }
+        skills:
+          type: array
+          items:
+            $ref: "#/components/schemas/SkillMatch"
+        flagReasons:
+          type: array
+          items: { type: string }
+        summary: { type: string }
+    Dashboard:
+      type: object
+      required: [activeJob, candidates, totalCandidates, shortlistedCount, flaggedCount, averageScore, scoreHistory]
+      properties:
+        activeJob:
+          $ref: "#/components/schemas/JobDescription"
+        candidates:
+          type: array
+          items:
+            $ref: "#/components/schemas/Candidate"
+        totalCandidates: { type: integer }
+        shortlistedCount: { type: integer }
+        flaggedCount: { type: integer }
+        averageScore: { type: number }
+        scoreHistory:
+          type: array
+          items:
+            $ref: "#/components/schemas/ScorePoint"
+    ScorePoint:
+      type: object
+      required: [label, score]
+      properties:
+        label: { type: string }
+        score: { type: number }
+    ChatMessage:
+      type: object
+      required: [id, role, content, createdAt]
+      properties:
+        id: { type: string }
+        role: { type: string, enum: [user, assistant] }
+        content: { type: string }
+        createdAt: { type: string }
+    ChatMessageInput:
+      type: object
+      required: [content]
+      properties:
+        content: { type: string, minLength: 1 }
+    ExportInput:
+      type: object
+      required: [kind, jobId]
+      properties:
+        kind: { type: string, enum: [ranked-list, comparison, skill-gap] }
+        jobId: { type: string }
+        candidateIds:
+          type: array
+          items: { type: string }
+    ExportResult:
+      type: object
+      required: [id, kind, fileName, createdAt]
+      properties:
+        id: { type: string }
+        kind: { type: string }
+        fileName: { type: string }
+        createdAt: { type: string }
+

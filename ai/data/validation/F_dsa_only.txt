@@ -1,0 +1,16 @@
+Karthik Nair
+karthik.nair@example.com
+
+ABOUT
+Competitive programmer. Codeforces Expert, 1750 rating.
+
+SKILLS
+C++, Data Structures and Algorithms, Problem Solving, Git, Linux
+
+ACHIEVEMENTS
+- ICPC regionals participant 2025.
+- 1200+ problems solved across Codeforces and LeetCode.
+- Teaching assistant for the Data Structures course.
+
+EDUCATION
+B.Tech Computer Science 2026. CGPA 9.1.

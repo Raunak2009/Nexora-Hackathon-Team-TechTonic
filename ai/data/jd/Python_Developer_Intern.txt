@@ -1,0 +1,24 @@
+TechNova Solutions
+Job Title: Python Developer Intern
+
+Responsibilities
+- Build backend services and internal tooling in Python.
+- Design and implement REST API endpoints.
+- Write and optimise database queries.
+- Write automated tests for everything you ship.
+
+Requirements
+- Strong Python skills and solid object oriented programming.
+- Experience with a Python web framework such as Django, Flask or FastAPI.
+- Must be comfortable designing and consuming REST APIs.
+- Working knowledge of SQL and database design.
+- Proficient with Git for version control.
+- Good problem solving and data structures fundamentals.
+
+Preferred Qualifications
+- Familiarity with Docker is a plus.
+- Exposure to cloud deployment on AWS would be an advantage.
+- Experience with pytest or another testing framework is desirable.
+
+Eligibility
+- Pursuing a Bachelor's degree in Computer Science or a related field.

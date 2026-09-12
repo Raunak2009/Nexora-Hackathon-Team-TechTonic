@@ -1,0 +1,22 @@
+TechNova Solutions
+Job Title: Mobile App Developer Intern
+
+Responsibilities
+- Build and ship features in our mobile application.
+- Integrate REST APIs and manage local data storage.
+- Work with designers to implement responsive, accessible screens.
+
+Requirements
+- Experience building mobile applications for Android or iOS.
+- Proficient in at least one of Kotlin, Java, Swift or Dart.
+- Must be comfortable consuming REST APIs from a mobile client.
+- Working knowledge of Git and collaborative development.
+- Understanding of mobile UI/UX principles.
+
+Preferred Qualifications
+- Familiarity with Flutter or React Native is a plus.
+- Exposure to Firebase would be an advantage.
+- Experience publishing to an app store is desirable.
+
+Eligibility
+- Pursuing a Bachelor's degree in a related field.

@@ -1,0 +1,365 @@
+import { Router, type IRouter } from "express";
+import {
+  CreateNexhireChatMessageBody,
+  CreateNexhireExportBody,
+  CreateNexhireJobBody,
+  GetNexhireCandidateParams,
+  ListNexhireCandidatesQueryParams,
+  UpdateNexhireJobBody,
+  UpdateNexhireJobParams,
+  UpdateNexhireWeightsBody,
+  UpdateNexhireWeightsParams,
+} from "@workspace/api-zod";
+
+type Job = {
+  id: string;
+  title: string;
+  company: string;
+  location: string;
+  status: "active" | "draft" | "archived";
+  skills: string[];
+  semanticWeight: number;
+  keywordWeight: number;
+  candidateCount: number;
+  updatedAt: string;
+};
+
+type CandidateSeed = {
+  id: string;
+  name: string;
+  initials: string;
+  email: string;
+  age: number;
+  yearsExperience: number;
+  role: string;
+  semanticScore: number;
+  keywordScore: number;
+  confidence: number;
+  matchedSkills: string[];
+  flagReasons: string[];
+  summary: string;
+};
+
+const jobs: Job[] = [
+  {
+    id: "job-react-intern",
+    title: "Frontend Engineering Intern",
+    company: "NexHire Labs",
+    location: "Remote · India",
+    status: "active",
+    skills: ["React", "TypeScript", "Node.js", "REST APIs", "Git", "Testing"],
+    semanticWeight: 0.6,
+    keywordWeight: 0.4,
+    candidateCount: 24,
+    updatedAt: "2026-09-12T07:30:00.000Z",
+  },
+  {
+    id: "job-product-design",
+    title: "Product Design Intern",
+    company: "NexHire Labs",
+    location: "Bengaluru · Hybrid",
+    status: "draft",
+    skills: ["Figma", "Prototyping", "User Research", "Design Systems"],
+    semanticWeight: 0.5,
+    keywordWeight: 0.5,
+    candidateCount: 0,
+    updatedAt: "2026-09-08T10:15:00.000Z",
+  },
+];
+
+const candidateSeeds: CandidateSeed[] = [
+  {
+    id: "candidate-1",
+    name: "Aarav Mehta",
+    initials: "AM",
+    email: "aarav.mehta@example.com",
+    age: 21,
+    yearsExperience: 1.5,
+    role: "Frontend Developer",
+    semanticScore: 92,
+    keywordScore: 88,
+    confidence: 91,
+    matchedSkills: ["React", "TypeScript", "Node.js", "REST APIs", "Git", "Testing"],
+    flagReasons: [],
+    summary:
+      "Strong end-to-end project evidence across React and TypeScript. His examples show clear ownership, measurable outcomes, and thoughtful testing habits.",
+  },
+  {
+    id: "candidate-2",
+    name: "Maya Patel",
+    initials: "MP",
+    email: "maya.patel@example.com",
+    age: 22,
+    yearsExperience: 2,
+    role: "Software Engineer",
+    semanticScore: 89,
+    keywordScore: 81,
+    confidence: 87,
+    matchedSkills: ["React", "TypeScript", "REST APIs", "Git", "Testing"],
+    flagReasons: [],
+    summary:
+      "A balanced profile with high semantic fit and clear evidence of shipping user-facing features. Node.js depth is lighter than the leading candidate.",
+  },
+  {
+    id: "candidate-3",
+    name: "Rohan Shah",
+    initials: "RS",
+    email: "rohan.shah@example.com",
+    age: 23,
+    yearsExperience: 5.2,
+    role: "Full Stack Developer",
+    semanticScore: 84,
+    keywordScore: 95,
+    confidence: 68,
+    matchedSkills: ["React", "Node.js", "REST APIs", "Git"],
+    flagReasons: ["5+ years of experience is unusual for an internship profile", "Uses broad claims without supporting detail"],
+    summary:
+      "Very strong explicit keyword coverage, but the resume relies on broad language and has less project detail than the top two profiles.",
+  },
+  {
+    id: "candidate-4",
+    name: "Diya Iyer",
+    initials: "DI",
+    email: "diya.iyer@example.com",
+    age: 20,
+    yearsExperience: 1,
+    role: "React Developer",
+    semanticScore: 78,
+    keywordScore: 76,
+    confidence: 82,
+    matchedSkills: ["React", "TypeScript", "Git", "Testing"],
+    flagReasons: [],
+    summary:
+      "Good foundational fit with credible project depth. REST API examples are present but less central to her recent work.",
+  },
+  {
+    id: "candidate-5",
+    name: "Kabir Rao",
+    initials: "KR",
+    email: "kabir.rao@example.com",
+    age: 21,
+    yearsExperience: 1.2,
+    role: "Web Developer",
+    semanticScore: 72,
+    keywordScore: 69,
+    confidence: 74,
+    matchedSkills: ["React", "Node.js", "Git"],
+    flagReasons: ["Uses repeated buzzwords without concrete examples"],
+    summary:
+      "Promising early experience and some useful full-stack exposure. The next step should validate testing and API design depth.",
+  },
+];
+
+const chatByJob: Record<string, Array<{ id: string; role: "user" | "assistant"; content: string; createdAt: string }>> = {
+  "job-react-intern": [
+    {
+      id: "chat-1",
+      role: "assistant",
+      content: "I’m ready to refine the scoring lens. Tell me what matters most for this internship cohort.",
+      createdAt: "2026-09-12T07:35:00.000Z",
+    },
+  ],
+};
+
+const getJob = (jobId?: string) =>
+  jobs.find((job) => job.id === jobId) ?? jobs.find((job) => job.status === "active") ?? jobs[0];
+
+const buildCandidate = (job: Job, seed: CandidateSeed) => {
+  const overallScore = Math.round(
+    job.semanticWeight * seed.semanticScore + job.keywordWeight * seed.keywordScore,
+  );
+  return {
+    id: seed.id,
+    name: seed.name,
+    initials: seed.initials,
+    email: seed.email,
+    age: seed.age,
+    yearsExperience: seed.yearsExperience,
+    role: seed.role,
+    semanticScore: seed.semanticScore,
+    keywordScore: seed.keywordScore,
+    overallScore,
+    confidence: seed.confidence,
+    status: seed.flagReasons.length > 0 ? "flagged" : overallScore >= 80 ? "shortlisted" : "review",
+    skills: job.skills.map((name) => ({ name, matched: seed.matchedSkills.includes(name) })),
+    flagReasons: seed.flagReasons,
+    summary: seed.summary,
+  };
+};
+
+const router: IRouter = Router();
+
+router.get("/nexhire/dashboard", (_req, res) => {
+  const activeJob = getJob();
+  const candidates = candidateSeeds.map((candidate) => buildCandidate(activeJob, candidate));
+  res.json({
+    activeJob,
+    candidates,
+    totalCandidates: activeJob.candidateCount,
+    shortlistedCount: candidates.filter((candidate) => candidate.status === "shortlisted").length,
+    flaggedCount: candidates.filter((candidate) => candidate.status === "flagged").length,
+    averageScore: Math.round(candidates.reduce((sum, candidate) => sum + candidate.overallScore, 0) / candidates.length),
+    scoreHistory: [
+      { label: "Aug 18", score: 62 },
+      { label: "Aug 25", score: 67 },
+      { label: "Sep 01", score: 70 },
+      { label: "Sep 08", score: 74 },
+      { label: "Today", score: 78 },
+    ],
+  });
+});
+
+router.get("/nexhire/candidates", (req, res) => {
+  const params = ListNexhireCandidatesQueryParams.safeParse(req.query);
+  if (!params.success) {
+    res.status(400).json({ error: params.error.message });
+    return;
+  }
+  const job = getJob(params.data.jobId);
+  const search = params.data.search?.toLowerCase();
+  const candidates = candidateSeeds
+    .map((candidate) => buildCandidate(job, candidate))
+    .filter((candidate) => (params.data.flagged ? candidate.status === "flagged" : true))
+    .filter((candidate) => (search ? `${candidate.name} ${candidate.role}`.toLowerCase().includes(search) : true));
+  res.json(candidates);
+});
+
+router.get("/nexhire/candidates/:candidateId", (req, res) => {
+  const params = GetNexhireCandidateParams.safeParse(req.params);
+  if (!params.success) {
+    res.status(400).json({ error: params.error.message });
+    return;
+  }
+  const seed = candidateSeeds.find((candidate) => candidate.id === params.data.candidateId);
+  if (!seed) {
+    res.status(404).json({ error: "Candidate not found" });
+    return;
+  }
+  res.json(buildCandidate(getJob(), seed));
+});
+
+router.get("/nexhire/jobs", (_req, res) => {
+  res.json(jobs);
+});
+
+router.post("/nexhire/jobs", (req, res) => {
+  const parsed = CreateNexhireJobBody.safeParse(req.body);
+  if (!parsed.success) {
+    res.status(400).json({ error: parsed.error.message });
+    return;
+  }
+  const job: Job = {
+    id: `job-${Date.now()}`,
+    title: parsed.data.title,
+    company: parsed.data.company,
+    location: parsed.data.location,
+    status: "draft",
+    skills: parsed.data.skills,
+    semanticWeight: parsed.data.semanticWeight ?? 0.5,
+    keywordWeight: parsed.data.keywordWeight ?? 0.5,
+    candidateCount: 0,
+    updatedAt: new Date().toISOString(),
+  };
+  jobs.push(job);
+  res.status(201).json(job);
+});
+
+router.patch("/nexhire/jobs/:jobId", (req, res) => {
+  const params = UpdateNexhireJobParams.safeParse(req.params);
+  const body = UpdateNexhireJobBody.safeParse(req.body);
+  if (!params.success) {
+    res.status(400).json({ error: params.error.message });
+    return;
+  }
+  if (!body.success) {
+    res.status(400).json({ error: body.error?.message ?? "Invalid request body" });
+    return;
+  }
+  const job = jobs.find((item) => item.id === params.data.jobId);
+  if (!job) {
+    res.status(404).json({ error: "Job description not found" });
+    return;
+  }
+  if (body.data.status === "active") {
+    jobs.forEach((item) => {
+      if (item.id !== job.id && item.status === "active") item.status = "draft";
+    });
+  }
+  Object.assign(job, body.data, { updatedAt: new Date().toISOString() });
+  res.json(job);
+});
+
+router.delete("/nexhire/jobs/:jobId", (req, res) => {
+  const job = jobs.find((item) => item.id === req.params.jobId);
+  if (!job) {
+    res.status(404).json({ error: "Job description not found" });
+    return;
+  }
+  job.status = "archived";
+  res.sendStatus(204);
+});
+
+router.patch("/nexhire/jobs/:jobId/weights", (req, res) => {
+  const params = UpdateNexhireWeightsParams.safeParse(req.params);
+  const body = UpdateNexhireWeightsBody.safeParse(req.body);
+  if (!params.success) {
+    res.status(400).json({ error: params.error.message });
+    return;
+  }
+  if (!body.success) {
+    res.status(400).json({ error: body.error?.message ?? "Invalid request body" });
+    return;
+  }
+  const job = jobs.find((item) => item.id === params.data.jobId);
+  if (!job) {
+    res.status(404).json({ error: "Job description not found" });
+    return;
+  }
+  job.semanticWeight = body.data.semanticWeight;
+  job.keywordWeight = body.data.keywordWeight;
+  job.updatedAt = new Date().toISOString();
+  res.json(job);
+});
+
+router.get("/nexhire/jobs/:jobId/chat", (req, res) => {
+  res.json(chatByJob[req.params.jobId] ?? []);
+});
+
+router.post("/nexhire/jobs/:jobId/chat", (req, res) => {
+  const body = CreateNexhireChatMessageBody.safeParse(req.body);
+  if (!body.success) {
+    res.status(400).json({ error: body.error.message });
+    return;
+  }
+  const messages = chatByJob[req.params.jobId] ?? [];
+  const now = new Date().toISOString();
+  const assistantText =
+    "I’ll increase the semantic signal for that preference and prioritize evidence of shipped work, collaboration, and clear technical decisions in the next ranking pass.";
+  const response = [
+    { id: `chat-${Date.now()}-user`, role: "user" as const, content: body.data.content, createdAt: now },
+    { id: `chat-${Date.now()}-assistant`, role: "assistant" as const, content: assistantText, createdAt: new Date(Date.now() + 10).toISOString() },
+  ];
+  chatByJob[req.params.jobId] = [...messages, ...response];
+  res.status(201).json(response);
+});
+
+router.post("/nexhire/exports", (req, res) => {
+  const body = CreateNexhireExportBody.safeParse(req.body);
+  if (!body.success) {
+    res.status(400).json({ error: body.error.message });
+    return;
+  }
+  const labels = {
+    "ranked-list": "ranked-candidates",
+    comparison: "top-three-comparison",
+    "skill-gap": "skill-gap-report",
+  };
+  res.status(201).json({
+    id: `export-${Date.now()}`,
+    kind: body.data.kind,
+    fileName: `${labels[body.data.kind]}.pdf`,
+    createdAt: new Date().toISOString(),
+  });
+});
+
+export default router;

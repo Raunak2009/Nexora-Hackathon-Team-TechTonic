@@ -1,0 +1,23 @@
+TechNova Solutions
+Job Title: Cyber Security Intern
+
+Responsibilities
+- Perform vulnerability assessments on internal web applications.
+- Assist with penetration testing and document findings.
+- Support security monitoring and incident response.
+
+Requirements
+- Solid understanding of network security fundamentals.
+- Hands-on experience with penetration testing tools such as Nmap and Wireshark.
+- Must be comfortable with Linux and the command line.
+- Working knowledge of Python or Bash for scripting.
+- Understanding of cryptography basics and secure coding practices.
+- Familiarity with the OWASP Top 10 and vulnerability assessment.
+
+Preferred Qualifications
+- Exposure to Burp Suite or Metasploit is a plus.
+- Awareness of cloud security on AWS would be an advantage.
+- A security certification is desirable.
+
+Eligibility
+- Pursuing a Bachelor's degree in Computer Science, IT or related.

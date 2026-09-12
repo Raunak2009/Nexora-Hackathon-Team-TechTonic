@@ -1,0 +1,14 @@
+Sneha Iyer
+sneha.iyer@example.com
+
+TECHNICAL SKILLS
+Core Java, Spring Boot, Hibernate, MySQL, Maven, Git, JUnit
+
+EXPERIENCE
+Java Developer, Synergy Infotech (Jul 2023 - Present)
+- Developed microservices with Spring Boot exposing RESTful endpoints.
+- Wrote JUnit tests and worked in an Agile Scrum team.
+- Managed schema changes on MySQL for a payments module.
+
+EDUCATION
+MCA 2023.

@@ -1,0 +1,42 @@
+TechNova Solutions
+Job Title: Junior Full Stack Developer Intern
+
+About the Role
+TechNova Solutions is looking for a Junior Full Stack Developer Intern to join our
+product engineering team. You will work alongside senior engineers on customer-facing
+web features, from the database up to the browser. This is a 6-month internship with a
+strong possibility of conversion to a full-time role.
+
+Responsibilities
+- Build and maintain features across the front end and the back end of our web platform.
+- Design and implement server-side endpoints that the web client consumes.
+- Write queries and manage data models for our application database.
+- Participate in code reviews and work with the team through our sprint cycle.
+- Write tests for the code you ship and help debug production issues.
+
+Requirements
+- Solid understanding of JavaScript and modern front-end development.
+- Experience building user interfaces with React.
+- Hands-on experience with Node.js for server-side development.
+- Must be comfortable designing and consuming REST APIs.
+- Working knowledge of a database - we use MongoDB, but relational experience counts.
+- Proficient with Git for version control and collaborative development.
+- Strong grasp of HTML and CSS, including responsive layouts.
+- Good problem solving skills and a solid grounding in data structures and algorithms.
+
+Preferred Qualifications
+- Familiarity with TypeScript is a plus.
+- Exposure to Next.js or another React meta-framework would be an advantage.
+- Basic understanding of Docker and containerised deployment is nice to have.
+- Experience with unit testing frameworks such as Jest is desirable.
+- Awareness of cloud platforms such as AWS is a bonus.
+
+Eligibility
+- Pursuing or recently completed a Bachelor's degree in Computer Science or a related field.
+- CGPA of 7.5 or above.
+- Candidates from tier-1 colleges preferred.
+- Should be available to work from our Bengaluru office 3 days a week.
+
+What We Offer
+- Mentorship from senior full stack engineers.
+- A monthly stipend and a pre-placement offer for strong performers.

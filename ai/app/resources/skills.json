@@ -1,0 +1,2702 @@
+{
+  "javascript": {
+    "canonical": "JavaScript",
+    "category": "language",
+    "aliases": [
+      "js",
+      "java script",
+      "es6",
+      "ecmascript",
+      "vanilla js"
+    ],
+    "related": [
+      "typescript",
+      "node.js",
+      "react",
+      "jquery"
+    ],
+    "importance": 1.0
+  },
+  "typescript": {
+    "canonical": "TypeScript",
+    "category": "language",
+    "aliases": [
+      "ts"
+    ],
+    "related": [
+      "javascript",
+      "angular",
+      "node.js"
+    ],
+    "importance": 1.0
+  },
+  "python": {
+    "canonical": "Python",
+    "category": "language",
+    "aliases": [
+      "python3",
+      "py"
+    ],
+    "related": [
+      "django",
+      "flask",
+      "fastapi",
+      "pandas"
+    ],
+    "importance": 1.0
+  },
+  "java": {
+    "canonical": "Java",
+    "category": "language",
+    "aliases": [
+      "core java",
+      "java se",
+      "j2se",
+      "advanced java",
+      "jdk"
+    ],
+    "related": [
+      "spring",
+      "spring boot",
+      "hibernate",
+      "jdbc",
+      "maven"
+    ],
+    "importance": 1.0
+  },
+  "c": {
+    "canonical": "C",
+    "category": "language",
+    "aliases": [],
+    "related": [
+      "c++"
+    ],
+    "importance": 1.0
+  },
+  "c++": {
+    "canonical": "C++",
+    "category": "language",
+    "aliases": [
+      "cpp",
+      "c plus plus"
+    ],
+    "related": [
+      "c"
+    ],
+    "importance": 1.0
+  },
+  "c#": {
+    "canonical": "C#",
+    "category": "language",
+    "aliases": [
+      "csharp",
+      "c sharp"
+    ],
+    "related": [
+      ".net",
+      "asp.net"
+    ],
+    "importance": 1.0
+  },
+  "go": {
+    "canonical": "Go",
+    "category": "language",
+    "aliases": [
+      "golang"
+    ],
+    "related": [
+      "docker",
+      "kubernetes"
+    ],
+    "importance": 1.0
+  },
+  "php": {
+    "canonical": "PHP",
+    "category": "language",
+    "aliases": [
+      "core php"
+    ],
+    "related": [
+      "laravel",
+      "mysql"
+    ],
+    "importance": 1.0
+  },
+  "ruby": {
+    "canonical": "Ruby",
+    "category": "language",
+    "aliases": [],
+    "related": [
+      "ruby on rails"
+    ],
+    "importance": 1.0
+  },
+  "kotlin": {
+    "canonical": "Kotlin",
+    "category": "language",
+    "aliases": [],
+    "related": [
+      "android",
+      "java"
+    ],
+    "importance": 1.0
+  },
+  "swift": {
+    "canonical": "Swift",
+    "category": "language",
+    "aliases": [],
+    "related": [
+      "ios"
+    ],
+    "importance": 1.0
+  },
+  "rust": {
+    "canonical": "Rust",
+    "category": "language",
+    "aliases": [],
+    "related": [
+      "c++"
+    ],
+    "importance": 1.0
+  },
+  "r": {
+    "canonical": "R",
+    "category": "language",
+    "aliases": [],
+    "related": [
+      "pandas"
+    ],
+    "importance": 1.0
+  },
+  "scala": {
+    "canonical": "Scala",
+    "category": "language",
+    "aliases": [],
+    "related": [
+      "spark",
+      "java"
+    ],
+    "importance": 1.0
+  },
+  "bash": {
+    "canonical": "Bash/Shell",
+    "category": "language",
+    "aliases": [
+      "shell scripting",
+      "shell",
+      "sh",
+      "zsh",
+      "unix shell"
+    ],
+    "related": [
+      "linux"
+    ],
+    "importance": 1.0
+  },
+  "html": {
+    "canonical": "HTML",
+    "category": "frontend",
+    "aliases": [
+      "html5",
+      "hypertext markup language"
+    ],
+    "related": [
+      "css"
+    ],
+    "importance": 1.0
+  },
+  "css": {
+    "canonical": "CSS",
+    "category": "frontend",
+    "aliases": [
+      "css3",
+      "cascading style sheets"
+    ],
+    "related": [
+      "html",
+      "sass",
+      "tailwind css",
+      "bootstrap"
+    ],
+    "importance": 1.0
+  },
+  "sass": {
+    "canonical": "Sass/SCSS",
+    "category": "frontend",
+    "aliases": [
+      "scss",
+      "less"
+    ],
+    "related": [
+      "css"
+    ],
+    "importance": 1.0
+  },
+  "tailwind css": {
+    "canonical": "Tailwind CSS",
+    "category": "frontend",
+    "aliases": [
+      "tailwind",
+      "tailwindcss"
+    ],
+    "related": [
+      "css"
+    ],
+    "importance": 1.0
+  },
+  "bootstrap": {
+    "canonical": "Bootstrap",
+    "category": "frontend",
+    "aliases": [
+      "bootstrap 5",
+      "twitter bootstrap"
+    ],
+    "related": [
+      "css",
+      "html"
+    ],
+    "importance": 1.0
+  },
+  "react": {
+    "canonical": "React",
+    "category": "frontend",
+    "aliases": [
+      "react.js",
+      "reactjs",
+      "react js",
+      "react hooks"
+    ],
+    "related": [
+      "javascript",
+      "next.js",
+      "redux",
+      "jsx",
+      "react native"
+    ],
+    "importance": 1.0
+  },
+  "next.js": {
+    "canonical": "Next.js",
+    "category": "frontend",
+    "aliases": [
+      "nextjs",
+      "next js"
+    ],
+    "related": [
+      "react",
+      "node.js",
+      "vercel"
+    ],
+    "importance": 1.0
+  },
+  "angular": {
+    "canonical": "Angular",
+    "category": "frontend",
+    "aliases": [
+      "angularjs",
+      "angular.js",
+      "angular 2+"
+    ],
+    "related": [
+      "typescript",
+      "rxjs"
+    ],
+    "importance": 1.0
+  },
+  "vue": {
+    "canonical": "Vue.js",
+    "category": "frontend",
+    "aliases": [
+      "vuejs",
+      "vue.js",
+      "vue js"
+    ],
+    "related": [
+      "javascript",
+      "nuxt"
+    ],
+    "importance": 1.0
+  },
+  "svelte": {
+    "canonical": "Svelte",
+    "category": "frontend",
+    "aliases": [
+      "sveltekit"
+    ],
+    "related": [
+      "javascript"
+    ],
+    "importance": 1.0
+  },
+  "redux": {
+    "canonical": "Redux",
+    "category": "frontend",
+    "aliases": [
+      "redux toolkit",
+      "rtk"
+    ],
+    "related": [
+      "react",
+      "state management"
+    ],
+    "importance": 1.0
+  },
+  "jquery": {
+    "canonical": "jQuery",
+    "category": "frontend",
+    "aliases": [
+      "jquery ui"
+    ],
+    "related": [
+      "javascript"
+    ],
+    "importance": 1.0
+  },
+  "react native": {
+    "canonical": "React Native",
+    "category": "mobile",
+    "aliases": [
+      "react-native"
+    ],
+    "related": [
+      "react",
+      "mobile development"
+    ],
+    "importance": 1.0
+  },
+  "flutter": {
+    "canonical": "Flutter",
+    "category": "mobile",
+    "aliases": [
+      "dart"
+    ],
+    "related": [
+      "mobile development"
+    ],
+    "importance": 1.0
+  },
+  "android": {
+    "canonical": "Android",
+    "category": "mobile",
+    "aliases": [
+      "android studio",
+      "android sdk"
+    ],
+    "related": [
+      "java",
+      "kotlin",
+      "mobile development"
+    ],
+    "importance": 1.0
+  },
+  "ios": {
+    "canonical": "iOS",
+    "category": "mobile",
+    "aliases": [
+      "xcode"
+    ],
+    "related": [
+      "swift",
+      "mobile development"
+    ],
+    "importance": 1.0
+  },
+  "mobile development": {
+    "canonical": "Mobile Development",
+    "category": "mobile",
+    "aliases": [
+      "mobile app development",
+      "app development"
+    ],
+    "related": [
+      "android",
+      "ios",
+      "react native",
+      "flutter"
+    ],
+    "importance": 1.0
+  },
+  "node.js": {
+    "canonical": "Node.js",
+    "category": "backend",
+    "aliases": [
+      "nodejs",
+      "node js"
+    ],
+    "related": [
+      "express",
+      "javascript",
+      "npm",
+      "rest api"
+    ],
+    "importance": 1.0
+  },
+  "express": {
+    "canonical": "Express.js",
+    "category": "backend",
+    "aliases": [
+      "express.js",
+      "expressjs",
+      "express js"
+    ],
+    "related": [
+      "node.js",
+      "rest api",
+      "mongodb"
+    ],
+    "importance": 1.0
+  },
+  "nestjs": {
+    "canonical": "NestJS",
+    "category": "backend",
+    "aliases": [
+      "nest.js",
+      "nest js"
+    ],
+    "related": [
+      "node.js",
+      "typescript"
+    ],
+    "importance": 1.0
+  },
+  "django": {
+    "canonical": "Django",
+    "category": "backend",
+    "aliases": [
+      "django rest framework",
+      "drf"
+    ],
+    "related": [
+      "python",
+      "rest api",
+      "postgresql"
+    ],
+    "importance": 1.0
+  },
+  "flask": {
+    "canonical": "Flask",
+    "category": "backend",
+    "aliases": [],
+    "related": [
+      "python",
+      "rest api"
+    ],
+    "importance": 1.0
+  },
+  "fastapi": {
+    "canonical": "FastAPI",
+    "category": "backend",
+    "aliases": [
+      "fast api"
+    ],
+    "related": [
+      "python",
+      "rest api"
+    ],
+    "importance": 1.0
+  },
+  "spring": {
+    "canonical": "Spring",
+    "category": "backend",
+    "aliases": [
+      "spring framework",
+      "spring mvc"
+    ],
+    "related": [
+      "java",
+      "spring boot",
+      "hibernate"
+    ],
+    "importance": 1.0
+  },
+  "spring boot": {
+    "canonical": "Spring Boot",
+    "category": "backend",
+    "aliases": [
+      "springboot"
+    ],
+    "related": [
+      "java",
+      "spring",
+      "rest api",
+      "microservices"
+    ],
+    "importance": 1.0
+  },
+  "laravel": {
+    "canonical": "Laravel",
+    "category": "backend",
+    "aliases": [],
+    "related": [
+      "php",
+      "mysql"
+    ],
+    "importance": 1.0
+  },
+  "ruby on rails": {
+    "canonical": "Ruby on Rails",
+    "category": "backend",
+    "aliases": [
+      "rails"
+    ],
+    "related": [
+      "ruby"
+    ],
+    "importance": 1.0
+  },
+  ".net": {
+    "canonical": ".NET",
+    "category": "backend",
+    "aliases": [
+      "dotnet",
+      ".net core",
+      "asp.net",
+      "asp.net core"
+    ],
+    "related": [
+      "c#"
+    ],
+    "importance": 1.0
+  },
+  "hibernate": {
+    "canonical": "Hibernate",
+    "category": "backend",
+    "aliases": [
+      "jpa"
+    ],
+    "related": [
+      "java",
+      "sql",
+      "orm"
+    ],
+    "importance": 1.0
+  },
+  "orm": {
+    "canonical": "ORM",
+    "category": "backend",
+    "aliases": [
+      "prisma",
+      "sequelize",
+      "mongoose",
+      "sqlalchemy",
+      "typeorm"
+    ],
+    "related": [
+      "sql",
+      "database design"
+    ],
+    "importance": 1.0
+  },
+  "rest api": {
+    "canonical": "REST APIs",
+    "category": "backend",
+    "aliases": [
+      "rest",
+      "restful",
+      "restful api",
+      "rest apis",
+      "api development",
+      "web api",
+      "restful web services",
+      "api integration"
+    ],
+    "related": [
+      "node.js",
+      "express",
+      "http",
+      "json",
+      "graphql",
+      "microservices"
+    ],
+    "importance": 1.0
+  },
+  "graphql": {
+    "canonical": "GraphQL",
+    "category": "backend",
+    "aliases": [
+      "apollo"
+    ],
+    "related": [
+      "rest api",
+      "node.js"
+    ],
+    "importance": 1.0
+  },
+  "grpc": {
+    "canonical": "gRPC",
+    "category": "backend",
+    "aliases": [
+      "protobuf",
+      "protocol buffers"
+    ],
+    "related": [
+      "microservices"
+    ],
+    "importance": 1.0
+  },
+  "microservices": {
+    "canonical": "Microservices",
+    "category": "backend",
+    "aliases": [
+      "micro services",
+      "microservice architecture"
+    ],
+    "related": [
+      "docker",
+      "kubernetes",
+      "rest api",
+      "system design"
+    ],
+    "importance": 1.0
+  },
+  "websocket": {
+    "canonical": "WebSockets",
+    "category": "backend",
+    "aliases": [
+      "websockets",
+      "socket.io",
+      "socketio"
+    ],
+    "related": [
+      "node.js",
+      "real-time"
+    ],
+    "importance": 1.0
+  },
+  "authentication": {
+    "canonical": "Authentication",
+    "category": "backend",
+    "aliases": [
+      "jwt",
+      "oauth",
+      "oauth2",
+      "auth",
+      "authorization",
+      "session management",
+      "passport.js"
+    ],
+    "related": [
+      "security",
+      "rest api"
+    ],
+    "importance": 1.0
+  },
+  "http": {
+    "canonical": "HTTP",
+    "category": "backend",
+    "aliases": [
+      "https",
+      "http protocol"
+    ],
+    "related": [
+      "rest api"
+    ],
+    "importance": 1.0
+  },
+  "json": {
+    "canonical": "JSON",
+    "category": "backend",
+    "aliases": [],
+    "related": [
+      "rest api",
+      "xml"
+    ],
+    "importance": 1.0
+  },
+  "xml": {
+    "canonical": "XML",
+    "category": "backend",
+    "aliases": [
+      "soap",
+      "xsd"
+    ],
+    "related": [
+      "json"
+    ],
+    "importance": 1.0
+  },
+  "sql": {
+    "canonical": "SQL",
+    "category": "database",
+    "aliases": [
+      "structured query language",
+      "sql queries",
+      "joins",
+      "stored procedures",
+      "pl/sql",
+      "t-sql"
+    ],
+    "related": [
+      "mysql",
+      "postgresql",
+      "database design",
+      "oracle"
+    ],
+    "importance": 1.0
+  },
+  "mysql": {
+    "canonical": "MySQL",
+    "category": "database",
+    "aliases": [
+      "my sql",
+      "mariadb"
+    ],
+    "related": [
+      "sql",
+      "postgresql"
+    ],
+    "importance": 1.0
+  },
+  "postgresql": {
+    "canonical": "PostgreSQL",
+    "category": "database",
+    "aliases": [
+      "postgres",
+      "psql"
+    ],
+    "related": [
+      "sql",
+      "mysql"
+    ],
+    "importance": 1.0
+  },
+  "mongodb": {
+    "canonical": "MongoDB",
+    "category": "database",
+    "aliases": [
+      "mongo",
+      "mongo db",
+      "mongoose"
+    ],
+    "related": [
+      "nosql",
+      "node.js",
+      "express"
+    ],
+    "importance": 1.0
+  },
+  "nosql": {
+    "canonical": "NoSQL",
+    "category": "database",
+    "aliases": [
+      "non-relational database"
+    ],
+    "related": [
+      "mongodb",
+      "redis",
+      "cassandra",
+      "dynamodb"
+    ],
+    "importance": 1.0
+  },
+  "redis": {
+    "canonical": "Redis",
+    "category": "database",
+    "aliases": [
+      "caching",
+      "memcached"
+    ],
+    "related": [
+      "nosql",
+      "performance optimization"
+    ],
+    "importance": 1.0
+  },
+  "sqlite": {
+    "canonical": "SQLite",
+    "category": "database",
+    "aliases": [],
+    "related": [
+      "sql"
+    ],
+    "importance": 1.0
+  },
+  "oracle": {
+    "canonical": "Oracle DB",
+    "category": "database",
+    "aliases": [
+      "oracle database",
+      "oracle 11g"
+    ],
+    "related": [
+      "sql",
+      "pl/sql"
+    ],
+    "importance": 1.0
+  },
+  "sql server": {
+    "canonical": "SQL Server",
+    "category": "database",
+    "aliases": [
+      "mssql",
+      "ms sql server",
+      "microsoft sql server"
+    ],
+    "related": [
+      "sql"
+    ],
+    "importance": 1.0
+  },
+  "firebase": {
+    "canonical": "Firebase",
+    "category": "database",
+    "aliases": [
+      "firestore",
+      "realtime database"
+    ],
+    "related": [
+      "nosql",
+      "authentication"
+    ],
+    "importance": 1.0
+  },
+  "database design": {
+    "canonical": "Database Design",
+    "category": "database",
+    "aliases": [
+      "schema design",
+      "data modelling",
+      "data modeling",
+      "normalization",
+      "er diagram"
+    ],
+    "related": [
+      "sql",
+      "orm"
+    ],
+    "importance": 1.0
+  },
+  "elasticsearch": {
+    "canonical": "Elasticsearch",
+    "category": "database",
+    "aliases": [
+      "elastic search",
+      "opensearch"
+    ],
+    "related": [
+      "nosql"
+    ],
+    "importance": 1.0
+  },
+  "git": {
+    "canonical": "Git",
+    "category": "devops",
+    "aliases": [
+      "version control",
+      "git version control"
+    ],
+    "related": [
+      "github",
+      "gitlab",
+      "svn"
+    ],
+    "importance": 1.0
+  },
+  "github": {
+    "canonical": "GitHub",
+    "category": "devops",
+    "aliases": [
+      "github actions"
+    ],
+    "related": [
+      "git",
+      "ci/cd"
+    ],
+    "importance": 1.0
+  },
+  "gitlab": {
+    "canonical": "GitLab",
+    "category": "devops",
+    "aliases": [
+      "gitlab ci"
+    ],
+    "related": [
+      "git",
+      "ci/cd"
+    ],
+    "importance": 1.0
+  },
+  "svn": {
+    "canonical": "SVN",
+    "category": "devops",
+    "aliases": [
+      "subversion",
+      "tortoise svn",
+      "tortoisesvn"
+    ],
+    "related": [
+      "git"
+    ],
+    "importance": 1.0
+  },
+  "docker": {
+    "canonical": "Docker",
+    "category": "devops",
+    "aliases": [
+      "containerization",
+      "containers",
+      "docker compose"
+    ],
+    "related": [
+      "kubernetes",
+      "ci/cd",
+      "microservices"
+    ],
+    "importance": 1.0
+  },
+  "kubernetes": {
+    "canonical": "Kubernetes",
+    "category": "devops",
+    "aliases": [
+      "k8s",
+      "helm"
+    ],
+    "related": [
+      "docker",
+      "microservices",
+      "cloud"
+    ],
+    "importance": 1.0
+  },
+  "ci/cd": {
+    "canonical": "CI/CD",
+    "category": "devops",
+    "aliases": [
+      "cicd",
+      "continuous integration",
+      "continuous deployment",
+      "continuous delivery",
+      "jenkins",
+      "build pipeline"
+    ],
+    "related": [
+      "github",
+      "docker",
+      "devops"
+    ],
+    "importance": 1.0
+  },
+  "jenkins": {
+    "canonical": "Jenkins",
+    "category": "devops",
+    "aliases": [],
+    "related": [
+      "ci/cd"
+    ],
+    "importance": 1.0
+  },
+  "aws": {
+    "canonical": "AWS",
+    "category": "cloud",
+    "aliases": [
+      "amazon web services",
+      "ec2",
+      "s3",
+      "lambda",
+      "aws lambda"
+    ],
+    "related": [
+      "cloud",
+      "docker",
+      "devops"
+    ],
+    "importance": 1.0
+  },
+  "azure": {
+    "canonical": "Azure",
+    "category": "cloud",
+    "aliases": [
+      "microsoft azure"
+    ],
+    "related": [
+      "cloud",
+      "devops"
+    ],
+    "importance": 1.0
+  },
+  "gcp": {
+    "canonical": "Google Cloud",
+    "category": "cloud",
+    "aliases": [
+      "google cloud platform",
+      "gcp"
+    ],
+    "related": [
+      "cloud"
+    ],
+    "importance": 1.0
+  },
+  "cloud": {
+    "canonical": "Cloud Computing",
+    "category": "cloud",
+    "aliases": [
+      "cloud computing",
+      "cloud deployment",
+      "cloud services"
+    ],
+    "related": [
+      "aws",
+      "azure",
+      "gcp"
+    ],
+    "importance": 1.0
+  },
+  "vercel": {
+    "canonical": "Vercel",
+    "category": "cloud",
+    "aliases": [
+      "netlify",
+      "heroku",
+      "render"
+    ],
+    "related": [
+      "deployment",
+      "next.js"
+    ],
+    "importance": 1.0
+  },
+  "deployment": {
+    "canonical": "Deployment",
+    "category": "devops",
+    "aliases": [
+      "hosting",
+      "production deployment"
+    ],
+    "related": [
+      "ci/cd",
+      "docker"
+    ],
+    "importance": 1.0
+  },
+  "linux": {
+    "canonical": "Linux",
+    "category": "devops",
+    "aliases": [
+      "unix",
+      "ubuntu",
+      "linux administration"
+    ],
+    "related": [
+      "bash",
+      "docker"
+    ],
+    "importance": 1.0
+  },
+  "nginx": {
+    "canonical": "Nginx",
+    "category": "devops",
+    "aliases": [
+      "apache",
+      "reverse proxy",
+      "load balancer"
+    ],
+    "related": [
+      "deployment",
+      "linux"
+    ],
+    "importance": 1.0
+  },
+  "testing": {
+    "canonical": "Testing",
+    "category": "quality",
+    "aliases": [
+      "software testing",
+      "qa",
+      "quality assurance",
+      "test cases",
+      "manual testing"
+    ],
+    "related": [
+      "unit testing",
+      "selenium",
+      "automation testing"
+    ],
+    "importance": 1.0
+  },
+  "unit testing": {
+    "canonical": "Unit Testing",
+    "category": "quality",
+    "aliases": [
+      "jest",
+      "pytest",
+      "junit",
+      "mocha",
+      "chai",
+      "vitest",
+      "unit tests"
+    ],
+    "related": [
+      "testing",
+      "tdd"
+    ],
+    "importance": 1.0
+  },
+  "automation testing": {
+    "canonical": "Test Automation",
+    "category": "quality",
+    "aliases": [
+      "automated testing",
+      "test automation",
+      "automation framework"
+    ],
+    "related": [
+      "selenium",
+      "testing",
+      "cypress"
+    ],
+    "importance": 1.0
+  },
+  "selenium": {
+    "canonical": "Selenium",
+    "category": "quality",
+    "aliases": [
+      "selenium webdriver",
+      "selenium ide",
+      "webdriver"
+    ],
+    "related": [
+      "automation testing",
+      "testng",
+      "java"
+    ],
+    "importance": 1.0
+  },
+  "cypress": {
+    "canonical": "Cypress",
+    "category": "quality",
+    "aliases": [
+      "playwright",
+      "puppeteer"
+    ],
+    "related": [
+      "automation testing",
+      "javascript"
+    ],
+    "importance": 1.0
+  },
+  "testng": {
+    "canonical": "TestNG",
+    "category": "quality",
+    "aliases": [],
+    "related": [
+      "selenium",
+      "java",
+      "unit testing"
+    ],
+    "importance": 1.0
+  },
+  "jira": {
+    "canonical": "JIRA",
+    "category": "process",
+    "aliases": [
+      "atlassian jira",
+      "bugzilla",
+      "defect tracking"
+    ],
+    "related": [
+      "agile",
+      "testing"
+    ],
+    "importance": 0.75
+  },
+  "agile": {
+    "canonical": "Agile/Scrum",
+    "category": "process",
+    "aliases": [
+      "scrum",
+      "agile methodology",
+      "sprint",
+      "kanban"
+    ],
+    "related": [
+      "jira",
+      "teamwork"
+    ],
+    "importance": 0.75
+  },
+  "data structures": {
+    "canonical": "Data Structures & Algorithms",
+    "category": "cs-fundamentals",
+    "aliases": [
+      "dsa",
+      "algorithms",
+      "data structures and algorithms",
+      "competitive programming"
+    ],
+    "related": [],
+    "importance": 1.0
+  },
+  "operating systems": {
+    "canonical": "Operating Systems",
+    "category": "cs-fundamentals",
+    "aliases": [
+      "os concepts"
+    ],
+    "related": [
+      "linux"
+    ],
+    "importance": 1.0
+  },
+  "computer networks": {
+    "canonical": "Computer Networks",
+    "category": "cs-fundamentals",
+    "aliases": [
+      "networking",
+      "tcp/ip",
+      "osi model"
+    ],
+    "related": [
+      "http"
+    ],
+    "importance": 1.0
+  },
+  "oop": {
+    "canonical": "Object-Oriented Programming",
+    "category": "cs-fundamentals",
+    "aliases": [
+      "object oriented programming",
+      "object-oriented",
+      "oops",
+      "oops concepts"
+    ],
+    "related": [
+      "java",
+      "c++",
+      "python"
+    ],
+    "importance": 1.0
+  },
+  "system design": {
+    "canonical": "System Design",
+    "category": "cs-fundamentals",
+    "aliases": [
+      "software architecture",
+      "architecture design",
+      "scalability"
+    ],
+    "related": [
+      "microservices",
+      "database design"
+    ],
+    "importance": 1.0
+  },
+  "machine learning": {
+    "canonical": "Machine Learning",
+    "category": "data",
+    "aliases": [
+      "ml",
+      "supervised learning",
+      "scikit-learn",
+      "sklearn"
+    ],
+    "related": [
+      "python",
+      "deep learning",
+      "data science"
+    ],
+    "importance": 1.0
+  },
+  "deep learning": {
+    "canonical": "Deep Learning",
+    "category": "data",
+    "aliases": [
+      "neural networks",
+      "tensorflow",
+      "pytorch",
+      "keras"
+    ],
+    "related": [
+      "machine learning",
+      "python"
+    ],
+    "importance": 1.0
+  },
+  "nlp": {
+    "canonical": "NLP",
+    "category": "data",
+    "aliases": [
+      "natural language processing",
+      "text mining"
+    ],
+    "related": [
+      "machine learning",
+      "python"
+    ],
+    "importance": 1.0
+  },
+  "data science": {
+    "canonical": "Data Science",
+    "category": "data",
+    "aliases": [
+      "data analysis",
+      "data analytics"
+    ],
+    "related": [
+      "python",
+      "pandas",
+      "machine learning",
+      "sql"
+    ],
+    "importance": 1.0
+  },
+  "pandas": {
+    "canonical": "Pandas",
+    "category": "data",
+    "aliases": [
+      "numpy",
+      "matplotlib"
+    ],
+    "related": [
+      "python",
+      "data science"
+    ],
+    "importance": 1.0
+  },
+  "power bi": {
+    "canonical": "Power BI",
+    "category": "data",
+    "aliases": [
+      "tableau",
+      "data visualization",
+      "dashboards"
+    ],
+    "related": [
+      "data science",
+      "sql"
+    ],
+    "importance": 1.0
+  },
+  "excel": {
+    "canonical": "Excel",
+    "category": "data",
+    "aliases": [
+      "microsoft excel",
+      "ms excel",
+      "spreadsheets",
+      "advanced excel"
+    ],
+    "related": [
+      "data analysis"
+    ],
+    "importance": 1.0
+  },
+  "spark": {
+    "canonical": "Apache Spark",
+    "category": "data",
+    "aliases": [
+      "pyspark",
+      "hadoop",
+      "big data"
+    ],
+    "related": [
+      "scala",
+      "data science"
+    ],
+    "importance": 1.0
+  },
+  "npm": {
+    "canonical": "npm/yarn",
+    "category": "tooling",
+    "aliases": [
+      "yarn",
+      "pnpm",
+      "package manager"
+    ],
+    "related": [
+      "node.js"
+    ],
+    "importance": 0.75
+  },
+  "maven": {
+    "canonical": "Maven",
+    "category": "tooling",
+    "aliases": [
+      "gradle",
+      "ant"
+    ],
+    "related": [
+      "java"
+    ],
+    "importance": 0.75
+  },
+  "webpack": {
+    "canonical": "Webpack/Vite",
+    "category": "tooling",
+    "aliases": [
+      "vite",
+      "babel",
+      "bundler",
+      "rollup"
+    ],
+    "related": [
+      "javascript"
+    ],
+    "importance": 0.75
+  },
+  "postman": {
+    "canonical": "Postman",
+    "category": "tooling",
+    "aliases": [
+      "insomnia",
+      "swagger",
+      "openapi",
+      "api testing"
+    ],
+    "related": [
+      "rest api",
+      "testing"
+    ],
+    "importance": 0.75
+  },
+  "vs code": {
+    "canonical": "VS Code",
+    "category": "tooling",
+    "aliases": [
+      "visual studio code",
+      "eclipse",
+      "intellij",
+      "pycharm"
+    ],
+    "related": [],
+    "importance": 0.75
+  },
+  "figma": {
+    "canonical": "Figma",
+    "category": "design",
+    "aliases": [
+      "adobe xd",
+      "sketch",
+      "wireframing",
+      "prototyping"
+    ],
+    "related": [
+      "ui/ux"
+    ],
+    "importance": 0.75
+  },
+  "ui/ux": {
+    "canonical": "UI/UX",
+    "category": "design",
+    "aliases": [
+      "ui design",
+      "ux design",
+      "user interface",
+      "user experience",
+      "responsive design"
+    ],
+    "related": [
+      "figma",
+      "css",
+      "html"
+    ],
+    "importance": 0.75
+  },
+  "seo": {
+    "canonical": "SEO",
+    "category": "other",
+    "aliases": [
+      "search engine optimization"
+    ],
+    "related": [
+      "content writing"
+    ],
+    "importance": 0.75
+  },
+  "content writing": {
+    "canonical": "Content Writing",
+    "category": "other",
+    "aliases": [
+      "technical writing",
+      "copywriting",
+      "content creation"
+    ],
+    "related": [
+      "communication"
+    ],
+    "importance": 0.75
+  },
+  "communication": {
+    "canonical": "Communication",
+    "category": "soft",
+    "aliases": [
+      "communication skills",
+      "verbal communication",
+      "written communication"
+    ],
+    "related": [
+      "teamwork"
+    ],
+    "importance": 0.45
+  },
+  "teamwork": {
+    "canonical": "Teamwork",
+    "category": "soft",
+    "aliases": [
+      "team player",
+      "collaboration",
+      "collaborative",
+      "cross-functional"
+    ],
+    "related": [
+      "communication",
+      "agile"
+    ],
+    "importance": 0.45
+  },
+  "leadership": {
+    "canonical": "Leadership",
+    "category": "soft",
+    "aliases": [
+      "team lead",
+      "mentoring",
+      "leading a team"
+    ],
+    "related": [
+      "teamwork"
+    ],
+    "importance": 0.45
+  },
+  "problem solving skills": {
+    "canonical": "Problem Solving",
+    "category": "soft",
+    "aliases": [
+      "analytical skills",
+      "critical thinking",
+      "logical thinking"
+    ],
+    "related": [],
+    "importance": 0.45
+  },
+  "time management": {
+    "canonical": "Time Management",
+    "category": "soft",
+    "aliases": [
+      "multitasking",
+      "prioritization"
+    ],
+    "related": [],
+    "importance": 0.45
+  },
+  "adaptability": {
+    "canonical": "Adaptability",
+    "category": "soft",
+    "aliases": [
+      "quick learner",
+      "fast learner",
+      "self-motivated",
+      "eager to learn",
+      "willingness to learn"
+    ],
+    "related": [],
+    "importance": 0.45
+  },
+  "network security": {
+    "canonical": "Network Security",
+    "category": "security",
+    "aliases": [
+      "information security",
+      "infosec",
+      "cyber security",
+      "cybersecurity",
+      "security operations",
+      "soc"
+    ],
+    "related": [
+      "computer networks",
+      "firewall",
+      "penetration testing"
+    ],
+    "importance": 1.0
+  },
+  "penetration testing": {
+    "canonical": "Penetration Testing",
+    "category": "security",
+    "aliases": [
+      "pentest",
+      "pen testing",
+      "ethical hacking",
+      "red teaming",
+      "vapt"
+    ],
+    "related": [
+      "vulnerability assessment",
+      "burp suite",
+      "metasploit",
+      "nmap"
+    ],
+    "importance": 1.0
+  },
+  "vulnerability assessment": {
+    "canonical": "Vulnerability Assessment",
+    "category": "security",
+    "aliases": [
+      "vulnerability scanning",
+      "vulnerability management",
+      "security assessment",
+      "owasp top 10",
+      "owasp"
+    ],
+    "related": [
+      "penetration testing",
+      "network security"
+    ],
+    "importance": 1.0
+  },
+  "nmap": {
+    "canonical": "Nmap",
+    "category": "security",
+    "aliases": [
+      "port scanning",
+      "network scanning"
+    ],
+    "related": [
+      "penetration testing",
+      "wireshark"
+    ],
+    "importance": 1.0
+  },
+  "wireshark": {
+    "canonical": "Wireshark",
+    "category": "security",
+    "aliases": [
+      "packet analysis",
+      "tcpdump",
+      "network sniffing"
+    ],
+    "related": [
+      "computer networks",
+      "nmap"
+    ],
+    "importance": 1.0
+  },
+  "burp suite": {
+    "canonical": "Burp Suite",
+    "category": "security",
+    "aliases": [
+      "burpsuite",
+      "owasp zap",
+      "zap proxy"
+    ],
+    "related": [
+      "penetration testing",
+      "web security"
+    ],
+    "importance": 1.0
+  },
+  "metasploit": {
+    "canonical": "Metasploit",
+    "category": "security",
+    "aliases": [
+      "exploit framework"
+    ],
+    "related": [
+      "penetration testing"
+    ],
+    "importance": 1.0
+  },
+  "cryptography": {
+    "canonical": "Cryptography",
+    "category": "security",
+    "aliases": [
+      "encryption",
+      "hashing",
+      "pki",
+      "tls",
+      "ssl",
+      "aes",
+      "rsa"
+    ],
+    "related": [
+      "network security"
+    ],
+    "importance": 1.0
+  },
+  "kali linux": {
+    "canonical": "Kali Linux",
+    "category": "security",
+    "aliases": [
+      "parrot os"
+    ],
+    "related": [
+      "linux",
+      "penetration testing"
+    ],
+    "importance": 1.0
+  },
+  "siem": {
+    "canonical": "SIEM",
+    "category": "security",
+    "aliases": [
+      "splunk",
+      "elk stack",
+      "security monitoring",
+      "log analysis",
+      "qradar"
+    ],
+    "related": [
+      "incident response",
+      "network security"
+    ],
+    "importance": 1.0
+  },
+  "incident response": {
+    "canonical": "Incident Response",
+    "category": "security",
+    "aliases": [
+      "threat detection",
+      "forensics",
+      "digital forensics",
+      "soc analyst"
+    ],
+    "related": [
+      "siem",
+      "network security"
+    ],
+    "importance": 1.0
+  },
+  "firewall": {
+    "canonical": "Firewall / IDS",
+    "category": "security",
+    "aliases": [
+      "ids",
+      "ips",
+      "intrusion detection",
+      "intrusion prevention",
+      "snort",
+      "pfsense"
+    ],
+    "related": [
+      "network security"
+    ],
+    "importance": 1.0
+  },
+  "malware analysis": {
+    "canonical": "Malware Analysis",
+    "category": "security",
+    "aliases": [
+      "reverse engineering",
+      "threat intelligence"
+    ],
+    "related": [
+      "incident response"
+    ],
+    "importance": 1.0
+  },
+  "web security": {
+    "canonical": "Web Security",
+    "category": "security",
+    "aliases": [
+      "xss",
+      "sql injection",
+      "csrf",
+      "secure coding"
+    ],
+    "related": [
+      "vulnerability assessment",
+      "burp suite"
+    ],
+    "importance": 1.0
+  },
+  "compliance": {
+    "canonical": "Security Compliance",
+    "category": "security",
+    "aliases": [
+      "iso 27001",
+      "gdpr",
+      "soc 2",
+      "nist",
+      "risk assessment",
+      "audit"
+    ],
+    "related": [
+      "network security"
+    ],
+    "importance": 1.0
+  },
+  "numpy": {
+    "canonical": "NumPy",
+    "category": "data",
+    "aliases": [
+      "numerical computing"
+    ],
+    "related": [
+      "python",
+      "pandas"
+    ],
+    "importance": 1.0
+  },
+  "matplotlib": {
+    "canonical": "Matplotlib",
+    "category": "data",
+    "aliases": [
+      "seaborn",
+      "plotly",
+      "data visualization",
+      "data visualisation"
+    ],
+    "related": [
+      "python",
+      "data science"
+    ],
+    "importance": 1.0
+  },
+  "statistics": {
+    "canonical": "Statistics",
+    "category": "data",
+    "aliases": [
+      "statistical analysis",
+      "hypothesis testing",
+      "probability",
+      "regression analysis",
+      "a/b testing",
+      "ab testing"
+    ],
+    "related": [
+      "data science",
+      "machine learning"
+    ],
+    "importance": 1.0
+  },
+  "jupyter": {
+    "canonical": "Jupyter",
+    "category": "data",
+    "aliases": [
+      "jupyter notebook",
+      "google colab",
+      "colab",
+      "notebooks"
+    ],
+    "related": [
+      "python",
+      "data science"
+    ],
+    "importance": 1.0
+  },
+  "feature engineering": {
+    "canonical": "Feature Engineering",
+    "category": "data",
+    "aliases": [
+      "feature selection",
+      "data preprocessing",
+      "data cleaning",
+      "data wrangling"
+    ],
+    "related": [
+      "machine learning",
+      "pandas"
+    ],
+    "importance": 1.0
+  },
+  "model evaluation": {
+    "canonical": "Model Evaluation",
+    "category": "data",
+    "aliases": [
+      "cross validation",
+      "confusion matrix",
+      "precision recall",
+      "roc auc",
+      "hyperparameter tuning"
+    ],
+    "related": [
+      "machine learning"
+    ],
+    "importance": 1.0
+  },
+  "computer vision": {
+    "canonical": "Computer Vision",
+    "category": "data",
+    "aliases": [
+      "opencv",
+      "image processing",
+      "object detection",
+      "cnn"
+    ],
+    "related": [
+      "deep learning",
+      "python"
+    ],
+    "importance": 1.0
+  },
+  "llm": {
+    "canonical": "LLMs / GenAI",
+    "category": "data",
+    "aliases": [
+      "large language model",
+      "large language models",
+      "generative ai",
+      "gen ai",
+      "prompt engineering",
+      "langchain",
+      "rag",
+      "retrieval augmented generation",
+      "hugging face",
+      "transformers"
+    ],
+    "related": [
+      "nlp",
+      "deep learning"
+    ],
+    "importance": 1.0
+  },
+  "etl": {
+    "canonical": "ETL / Data Pipelines",
+    "category": "data",
+    "aliases": [
+      "data pipeline",
+      "data pipelines",
+      "airflow",
+      "data engineering",
+      "dbt"
+    ],
+    "related": [
+      "sql",
+      "spark"
+    ],
+    "importance": 1.0
+  },
+  "tableau": {
+    "canonical": "Tableau",
+    "category": "data",
+    "aliases": [
+      "looker",
+      "qlik",
+      "data dashboards"
+    ],
+    "related": [
+      "power bi",
+      "data science"
+    ],
+    "importance": 1.0
+  },
+  "time series": {
+    "canonical": "Time Series",
+    "category": "data",
+    "aliases": [
+      "forecasting",
+      "arima"
+    ],
+    "related": [
+      "statistics",
+      "machine learning"
+    ],
+    "importance": 1.0
+  },
+  "recommendation systems": {
+    "canonical": "Recommendation Systems",
+    "category": "data",
+    "aliases": [
+      "recommender system",
+      "collaborative filtering"
+    ],
+    "related": [
+      "machine learning"
+    ],
+    "importance": 1.0
+  },
+  "video editing": {
+    "canonical": "Video Editing",
+    "category": "design",
+    "aliases": [
+      "video production",
+      "post production",
+      "video editor"
+    ],
+    "related": [
+      "premiere pro",
+      "after effects",
+      "motion graphics"
+    ],
+    "importance": 1.0
+  },
+  "premiere pro": {
+    "canonical": "Premiere Pro",
+    "category": "design",
+    "aliases": [
+      "adobe premiere",
+      "final cut pro",
+      "final cut",
+      "davinci resolve",
+      "filmora",
+      "capcut"
+    ],
+    "related": [
+      "video editing"
+    ],
+    "importance": 1.0
+  },
+  "after effects": {
+    "canonical": "After Effects",
+    "category": "design",
+    "aliases": [
+      "adobe after effects",
+      "motion graphics",
+      "vfx",
+      "visual effects"
+    ],
+    "related": [
+      "video editing",
+      "animation"
+    ],
+    "importance": 1.0
+  },
+  "photoshop": {
+    "canonical": "Photoshop",
+    "category": "design",
+    "aliases": [
+      "adobe photoshop",
+      "photo editing",
+      "image editing"
+    ],
+    "related": [
+      "illustrator",
+      "graphic design"
+    ],
+    "importance": 1.0
+  },
+  "illustrator": {
+    "canonical": "Illustrator",
+    "category": "design",
+    "aliases": [
+      "adobe illustrator",
+      "vector design"
+    ],
+    "related": [
+      "photoshop",
+      "graphic design"
+    ],
+    "importance": 1.0
+  },
+  "graphic design": {
+    "canonical": "Graphic Design",
+    "category": "design",
+    "aliases": [
+      "visual design",
+      "branding",
+      "brand identity",
+      "typography",
+      "layout design"
+    ],
+    "related": [
+      "photoshop",
+      "illustrator",
+      "figma"
+    ],
+    "importance": 1.0
+  },
+  "canva": {
+    "canonical": "Canva",
+    "category": "design",
+    "aliases": [],
+    "related": [
+      "graphic design"
+    ],
+    "importance": 1.0
+  },
+  "animation": {
+    "canonical": "Animation",
+    "category": "design",
+    "aliases": [
+      "2d animation",
+      "3d animation",
+      "motion design"
+    ],
+    "related": [
+      "after effects",
+      "blender"
+    ],
+    "importance": 1.0
+  },
+  "blender": {
+    "canonical": "Blender",
+    "category": "design",
+    "aliases": [
+      "3d modelling",
+      "3d modeling",
+      "maya",
+      "cinema 4d"
+    ],
+    "related": [
+      "animation"
+    ],
+    "importance": 1.0
+  },
+  "color grading": {
+    "canonical": "Colour Grading",
+    "category": "design",
+    "aliases": [
+      "colour correction",
+      "color correction",
+      "color grading"
+    ],
+    "related": [
+      "video editing",
+      "premiere pro"
+    ],
+    "importance": 1.0
+  },
+  "storyboarding": {
+    "canonical": "Storyboarding",
+    "category": "design",
+    "aliases": [
+      "script writing",
+      "scriptwriting",
+      "storytelling"
+    ],
+    "related": [
+      "video editing",
+      "content writing"
+    ],
+    "importance": 1.0
+  },
+  "sound editing": {
+    "canonical": "Sound Editing",
+    "category": "design",
+    "aliases": [
+      "audio editing",
+      "audacity",
+      "sound design"
+    ],
+    "related": [
+      "video editing"
+    ],
+    "importance": 1.0
+  },
+  "social media marketing": {
+    "canonical": "Social Media Marketing",
+    "category": "marketing",
+    "aliases": [
+      "social media management",
+      "smm",
+      "instagram marketing",
+      "social media strategy",
+      "community management"
+    ],
+    "related": [
+      "content writing",
+      "seo",
+      "digital marketing"
+    ],
+    "importance": 1.0
+  },
+  "digital marketing": {
+    "canonical": "Digital Marketing",
+    "category": "marketing",
+    "aliases": [
+      "online marketing",
+      "performance marketing",
+      "paid ads",
+      "google ads",
+      "meta ads",
+      "facebook ads",
+      "ppc"
+    ],
+    "related": [
+      "seo",
+      "social media marketing"
+    ],
+    "importance": 1.0
+  },
+  "google analytics": {
+    "canonical": "Google Analytics",
+    "category": "marketing",
+    "aliases": [
+      "ga4",
+      "web analytics",
+      "analytics tracking"
+    ],
+    "related": [
+      "digital marketing",
+      "seo"
+    ],
+    "importance": 1.0
+  },
+  "email marketing": {
+    "canonical": "Email Marketing",
+    "category": "marketing",
+    "aliases": [
+      "mailchimp",
+      "newsletter",
+      "drip campaign"
+    ],
+    "related": [
+      "digital marketing"
+    ],
+    "importance": 1.0
+  },
+  "content strategy": {
+    "canonical": "Content Strategy",
+    "category": "marketing",
+    "aliases": [
+      "editorial calendar",
+      "content calendar",
+      "content planning"
+    ],
+    "related": [
+      "content writing",
+      "social media marketing"
+    ],
+    "importance": 1.0
+  },
+  "cms": {
+    "canonical": "CMS / WordPress",
+    "category": "marketing",
+    "aliases": [
+      "wordpress",
+      "content management system",
+      "webflow",
+      "ghost cms"
+    ],
+    "related": [
+      "content writing",
+      "seo"
+    ],
+    "importance": 1.0
+  },
+  "keyword research": {
+    "canonical": "Keyword Research",
+    "category": "marketing",
+    "aliases": [
+      "on-page seo",
+      "off-page seo",
+      "semrush",
+      "ahrefs",
+      "google search console"
+    ],
+    "related": [
+      "seo"
+    ],
+    "importance": 1.0
+  },
+  "copy editing": {
+    "canonical": "Copy Editing",
+    "category": "marketing",
+    "aliases": [
+      "proofreading",
+      "editing",
+      "blogging",
+      "article writing"
+    ],
+    "related": [
+      "content writing"
+    ],
+    "importance": 1.0
+  },
+  "brand marketing": {
+    "canonical": "Brand Marketing",
+    "category": "marketing",
+    "aliases": [
+      "brand management",
+      "campaign management",
+      "go to market",
+      "gtm"
+    ],
+    "related": [
+      "digital marketing"
+    ],
+    "importance": 1.0
+  },
+  "influencer marketing": {
+    "canonical": "Influencer Marketing",
+    "category": "marketing",
+    "aliases": [
+      "influencer outreach",
+      "creator partnerships"
+    ],
+    "related": [
+      "social media marketing"
+    ],
+    "importance": 1.0
+  },
+  "lead generation": {
+    "canonical": "Lead Generation",
+    "category": "business",
+    "aliases": [
+      "lead gen",
+      "prospecting",
+      "cold calling",
+      "cold emailing",
+      "outreach",
+      "demand generation"
+    ],
+    "related": [
+      "crm",
+      "sales"
+    ],
+    "importance": 0.75
+  },
+  "sales": {
+    "canonical": "Sales",
+    "category": "business",
+    "aliases": [
+      "b2b sales",
+      "b2c sales",
+      "inside sales",
+      "field sales",
+      "sales development",
+      "closing deals",
+      "revenue generation"
+    ],
+    "related": [
+      "lead generation",
+      "crm",
+      "negotiation"
+    ],
+    "importance": 0.75
+  },
+  "crm": {
+    "canonical": "CRM",
+    "category": "business",
+    "aliases": [
+      "salesforce",
+      "hubspot",
+      "zoho crm",
+      "pipedrive",
+      "customer relationship management"
+    ],
+    "related": [
+      "sales",
+      "lead generation"
+    ],
+    "importance": 0.75
+  },
+  "negotiation": {
+    "canonical": "Negotiation",
+    "category": "business",
+    "aliases": [
+      "deal negotiation",
+      "contract negotiation"
+    ],
+    "related": [
+      "sales",
+      "communication"
+    ],
+    "importance": 0.75
+  },
+  "account management": {
+    "canonical": "Account Management",
+    "category": "business",
+    "aliases": [
+      "client management",
+      "customer success",
+      "client relationship",
+      "key accounts",
+      "renewals",
+      "churn"
+    ],
+    "related": [
+      "sales",
+      "crm"
+    ],
+    "importance": 0.75
+  },
+  "market research": {
+    "canonical": "Market Research",
+    "category": "business",
+    "aliases": [
+      "competitive analysis",
+      "competitor analysis",
+      "market analysis",
+      "industry research"
+    ],
+    "related": [
+      "business analysis"
+    ],
+    "importance": 0.75
+  },
+  "business analysis": {
+    "canonical": "Business Analysis",
+    "category": "business",
+    "aliases": [
+      "business analyst",
+      "requirement gathering",
+      "gap analysis",
+      "process improvement"
+    ],
+    "related": [
+      "market research",
+      "data analysis"
+    ],
+    "importance": 0.75
+  },
+  "project management": {
+    "canonical": "Project Management",
+    "category": "business",
+    "aliases": [
+      "program management",
+      "stakeholder management",
+      "roadmap",
+      "okr",
+      "okrs",
+      "sprint planning"
+    ],
+    "related": [
+      "agile",
+      "communication"
+    ],
+    "importance": 0.75
+  },
+  "financial modelling": {
+    "canonical": "Financial Modelling",
+    "category": "business",
+    "aliases": [
+      "financial modeling",
+      "financial analysis",
+      "budgeting",
+      "forecasting",
+      "unit economics",
+      "valuation"
+    ],
+    "related": [
+      "excel",
+      "business analysis"
+    ],
+    "importance": 0.75
+  },
+  "operations": {
+    "canonical": "Operations",
+    "category": "business",
+    "aliases": [
+      "business operations",
+      "ops",
+      "process optimization",
+      "process optimisation",
+      "vendor management",
+      "supply chain"
+    ],
+    "related": [
+      "project management"
+    ],
+    "importance": 0.75
+  },
+  "presentation": {
+    "canonical": "Presentation",
+    "category": "business",
+    "aliases": [
+      "powerpoint",
+      "pitch deck",
+      "google slides",
+      "keynote",
+      "public speaking"
+    ],
+    "related": [
+      "communication"
+    ],
+    "importance": 0.75
+  },
+  "recruitment": {
+    "canonical": "Recruitment",
+    "category": "hr",
+    "aliases": [
+      "talent acquisition",
+      "hiring",
+      "sourcing",
+      "candidate sourcing",
+      "technical recruiting",
+      "campus hiring"
+    ],
+    "related": [
+      "interviewing",
+      "ats"
+    ],
+    "importance": 0.75
+  },
+  "interviewing": {
+    "canonical": "Interviewing",
+    "category": "hr",
+    "aliases": [
+      "screening",
+      "candidate screening",
+      "interview coordination"
+    ],
+    "related": [
+      "recruitment"
+    ],
+    "importance": 0.75
+  },
+  "ats": {
+    "canonical": "ATS / HRMS",
+    "category": "hr",
+    "aliases": [
+      "applicant tracking system",
+      "hrms",
+      "hris",
+      "workday",
+      "naukri",
+      "linkedin recruiter",
+      "zoho people"
+    ],
+    "related": [
+      "recruitment"
+    ],
+    "importance": 0.75
+  },
+  "onboarding": {
+    "canonical": "Onboarding",
+    "category": "hr",
+    "aliases": [
+      "employee onboarding",
+      "induction",
+      "employee engagement",
+      "employee relations"
+    ],
+    "related": [
+      "hr operations"
+    ],
+    "importance": 0.75
+  },
+  "hr operations": {
+    "canonical": "HR Operations",
+    "category": "hr",
+    "aliases": [
+      "payroll",
+      "attendance management",
+      "hr policies",
+      "compliance management",
+      "performance management",
+      "appraisal"
+    ],
+    "related": [
+      "onboarding"
+    ],
+    "importance": 0.75
+  },
+  "troubleshooting": {
+    "canonical": "Troubleshooting",
+    "category": "it-support",
+    "aliases": [
+      "technical support",
+      "helpdesk",
+      "help desk",
+      "desktop support",
+      "issue resolution",
+      "remote support"
+    ],
+    "related": [
+      "ticketing",
+      "hardware"
+    ],
+    "importance": 1.0
+  },
+  "ticketing": {
+    "canonical": "Ticketing Systems",
+    "category": "it-support",
+    "aliases": [
+      "servicenow",
+      "zendesk",
+      "freshdesk",
+      "itil",
+      "sla management",
+      "incident management"
+    ],
+    "related": [
+      "troubleshooting"
+    ],
+    "importance": 1.0
+  },
+  "active directory": {
+    "canonical": "Active Directory",
+    "category": "it-support",
+    "aliases": [
+      "windows server",
+      "group policy",
+      "ldap",
+      "azure ad",
+      "user management"
+    ],
+    "related": [
+      "troubleshooting",
+      "windows"
+    ],
+    "importance": 1.0
+  },
+  "windows": {
+    "canonical": "Windows Administration",
+    "category": "it-support",
+    "aliases": [
+      "windows 10",
+      "windows 11",
+      "windows os",
+      "system administration",
+      "sysadmin"
+    ],
+    "related": [
+      "active directory",
+      "linux"
+    ],
+    "importance": 1.0
+  },
+  "hardware": {
+    "canonical": "Hardware Support",
+    "category": "it-support",
+    "aliases": [
+      "hardware troubleshooting",
+      "peripherals",
+      "imaging",
+      "system assembly",
+      "printer support"
+    ],
+    "related": [
+      "troubleshooting"
+    ],
+    "importance": 1.0
+  },
+  "networking support": {
+    "canonical": "Networking Support",
+    "category": "it-support",
+    "aliases": [
+      "lan",
+      "wan",
+      "vpn",
+      "dhcp",
+      "dns",
+      "router configuration",
+      "switch configuration"
+    ],
+    "related": [
+      "computer networks",
+      "troubleshooting"
+    ],
+    "importance": 1.0
+  },
+  "unity": {
+    "canonical": "Unity",
+    "category": "game",
+    "aliases": [
+      "unity3d",
+      "unity engine"
+    ],
+    "related": [
+      "c#",
+      "game design"
+    ],
+    "importance": 1.0
+  },
+  "unreal": {
+    "canonical": "Unreal Engine",
+    "category": "game",
+    "aliases": [
+      "unreal",
+      "ue5",
+      "blueprints"
+    ],
+    "related": [
+      "c++",
+      "game design"
+    ],
+    "importance": 1.0
+  },
+  "game design": {
+    "canonical": "Game Design",
+    "category": "game",
+    "aliases": [
+      "level design",
+      "gameplay programming",
+      "game development"
+    ],
+    "related": [
+      "unity",
+      "unreal"
+    ],
+    "importance": 1.0
+  }
+}

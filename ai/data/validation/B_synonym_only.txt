@@ -1,0 +1,21 @@
+Nikhil Rao
+nikhil.rao@example.com
+
+PROFILE
+Web developer who enjoys building the server side of products.
+
+SKILLS
+JavaScript, Express.js, Mongoose, HTML, CSS, Git, Postman, Agile
+
+WORK
+Backend Developer Intern, Bluegrid (2025)
+- Designed and shipped RESTful web services using Express and MongoDB.
+- Modelled collections and wrote aggregation queries for reporting.
+- Collaborated with the front end team on API contracts.
+
+PROJECTS
+Habit tracker API - Express server, MongoDB persistence, token auth.
+Portfolio site - hand written HTML and CSS, no framework.
+
+EDUCATION
+B.Sc Computer Science 2025.

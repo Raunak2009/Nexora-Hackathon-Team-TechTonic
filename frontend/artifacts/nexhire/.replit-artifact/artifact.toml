@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "NexHire"
+description = "A recruiter workspace for evaluating internship candidates with AI-assisted skill matching, scoring, comparisons, flagging, and exportable hiring insights."
+version = "1.0.0"
+id = "artifacts/nexhire"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19235
+
+[services.development]
+run = "pnpm --filter @workspace/nexhire run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/nexhire", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/nexhire/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19235"
+BASE_PATH = "/"

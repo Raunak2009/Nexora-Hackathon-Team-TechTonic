@@ -1,0 +1,4 @@
+# The backend does not install anything the engine does not already need.
+# Installing ../ai/requirements.txt is enough; this file exists so that
+# `pip install -r backend/requirements.txt` also works on its own.
+-r ../ai/requirements.txt
